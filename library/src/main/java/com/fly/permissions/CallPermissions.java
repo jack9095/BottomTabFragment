@@ -162,7 +162,7 @@ public final class CallPermissions {
             //获取拒绝权限
             List<String> failPermissions = PermissionUtils.getFailPermissions(permissions, grantResults);
             //代表申请的权限中有不同意授予的，如果拒绝的时间过快证明是系统自动拒绝
-            call.noPermission(failPermissions, System.currentTimeMillis() - sRequestTime < 200);
+            call.errorPermission(failPermissions, System.currentTimeMillis() - sRequestTime < 200);
             //证明还有一部分权限被成功授予，回调成功接口
             if (!succeedPermissions.isEmpty()) {
                 call.onPermissionResult(succeedPermissions, false);

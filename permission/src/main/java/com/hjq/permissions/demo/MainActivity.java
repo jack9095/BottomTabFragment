@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void noPermission(List<String> denied, boolean quick) {
+                    public void errorPermission(List<String> denied, boolean quick) {
                         if(quick) {
                             Toast.makeText(MainActivity.this, "被永久拒绝授权，请手动授予权限", Toast.LENGTH_SHORT).show();
                             //如果是被永久拒绝就跳转到应用权限系统设置页面

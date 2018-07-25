@@ -19,5 +19,5 @@ public interface OnPermissionListener {
      * @param denied            请求失败的权限组
      * @param quick             是否被系统自动拒绝了
      */
-    void noPermission(List<String> denied, boolean quick);
+    void errorPermission(List<String> denied, boolean quick);
 }
