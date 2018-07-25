@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ptrFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_ptr_a"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#D7F2E7"
+            android:gravity="center"
+            android:text="为您推送了5条新内容"
+            android:textColor="#1AC77E"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</in.srain.cube.views.ptr.PtrFrameLayout>

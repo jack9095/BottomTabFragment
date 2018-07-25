@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:background="@drawable/circle_back_ground"
+        android:layout_centerInParent="true"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/listview_foot_progress"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#D7F2E7"
+        android:gravity="center"
+        android:text="为您推送了5条新内容"
+        android:textColor="#1AC77E"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</RelativeLayout>
